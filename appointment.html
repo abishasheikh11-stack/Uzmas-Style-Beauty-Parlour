@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Uzma's Style Beauty Parlour</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="appointment-page">
+    <div class="appointment-box">
+      <h1>Book Your Appointment</h1>
+
+      <form action="https://formsubmit.co/us78987@gmail.com" method="POST" class="appointment-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Appointment Booking - Uzma's Style Beauty Parlour">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://abishasheikh11-stack.github.io/Uzma-s-Style-Beauty-Parlour/thankyou.html">
+        <input type="hidden" name="_autoresponse" value="Your appointment request has been received!">
+
+        <input type="text" name="Name" placeholder="Your Full Name" required>
+        <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+
+        <select name="Service" required>
+          <option value="">Select Service</option>
+          <option>Hair Styling</option>
+          <option>Makeup</option>
+          <option>Bridal Makeup</option>
+          <option>Facial</option>
+          <option>Spa</option>
+          <option>Haircut</option>
+          <option>Skincare</option>
+        </select>
+
+        <input type="date" name="Appointment Date" required>
+        <input type="time" name="Appointment Time" required>
+
+        <textarea name="Message" rows="5" placeholder="Any extra details?"></textarea>
+
+        <button type="submit" class="btn">Book Appointment</button>
+      </form>
+
+      <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+  </section>
+
+</body>
+</html>
