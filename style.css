@@ -347,17 +347,15 @@
 }
 
 /* ---------- FOOTER ---------- */
-.footer{
-    background-color: #d1c4e9;
-    padding: 30px 20px;
-    text-align: center;
-    font-size: 16px;
+.footer-container a{
     color: #4a148c;
-    border-top: 2px solid #ba68c8;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.footer-container p{
-    margin: 6px 0;
+.footer-container a:hover{
+    color: #7e57c2;
+    text-decoration: underline;
 }
 
 /* ---------- APPOINTMENT PAGE ---------- */
@@ -467,7 +465,7 @@
     padding: 14px 28px;
 }
 
-/* ---------- MOBILE RESPONSIVE ---------- */
+
 /* ---------- MOBILE RESPONSIVE ---------- */
 @media screen and (max-width: 768px){
 
@@ -609,9 +607,9 @@
         width: 100%;
     }
 
-    .footer{
-        font-size: 14px;
-        padding: 20px 15px;
+    .footer-container p{
+    font-size: 14px;
+    line-height: 1.8;
     }
 
     .appointment-box{
