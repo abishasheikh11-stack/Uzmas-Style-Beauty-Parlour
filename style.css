@@ -468,54 +468,74 @@
 }
 
 /* ---------- MOBILE RESPONSIVE ---------- */
+/* ---------- MOBILE RESPONSIVE ---------- */
 @media screen and (max-width: 768px){
 
     .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 12px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
     .nav-list{
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: nowrap;
     }
 
     .nav-list li{
-        width: 100%;
-        padding: 10px 0;
+        width: auto;
+        padding: 0;
+    }
+
+    .nav-list li a{
+        font-size: 14px;
     }
 
     .logo{
-        margin-bottom: 10px;
+        width: auto;
+        margin-right: 10px;
     }
 
     .logo img{
-        width: 70px;
+        width: 45px;
     }
 
     .rightNav{
-        width: 100%;
-        text-align: left;
+        width: auto;
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+        margin-left: 10px;
     }
 
     .rightNav input{
-        width: 100%;
+        width: 120px;
+        height: 30px;
+        font-size: 13px;
     }
 
     .rightNav .btn-sm{
-        width: 100%;
+        width: auto;
+        height: 30px;
+        padding: 0 12px;
+        font-size: 13px;
         margin-left: 0;
     }
 
     .box-main{
         width: 90%;
-        padding: 50px 0;
+        padding: 40px 0;
     }
 
     .text-big{
@@ -624,4 +644,8 @@
     .thankyou-box p{
         font-size: 17px;
     }
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
 }
